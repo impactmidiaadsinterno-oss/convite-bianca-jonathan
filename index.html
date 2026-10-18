@@ -1,11 +1,15 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" style="color-scheme:only light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#353B20">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Bianca & Jonathan">
 <meta property="og:description" content="Você está convidado para o nosso casamento · 27.02.2027">
 <meta property="og:image" content="foto-casal.jpg">
+<style>img{max-width:100%}html{-webkit-text-size-adjust:100%}</style>
 <title>Bianca & Jonathan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +29,7 @@
   --script:"Pinyon Script","Snell Roundhand",cursive;
   --serif:"Cormorant Garamond","Cormorant",Garamond,"Times New Roman",serif;
   --caps:"Marcellus SC","Cormorant SC",Georgia,serif;
-  color-scheme:light;
+  color-scheme:only light;
 }
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -287,7 +291,7 @@ h2{
 
 /* local */
 .foto-local{margin:4px auto 24px;max-width:520px;padding:6px;background:var(--paper);box-shadow:0 0 0 1px rgba(179,149,86,.55),0 14px 30px rgba(53,59,32,.2)}
-.foto-local img{display:block;width:100%;height:auto;aspect-ratio:900/641;object-fit:cover}
+.foto-local img{display:block;width:100%;height:auto;aspect-ratio:1466/1032;object-fit:cover}
 @media (max-width:560px){
   /* no celular a foto vai de ponta a ponta e fica mais alta, focando no corredor */
   .foto-local{margin:6px calc(-1 * var(--px,24px)) 26px;max-width:none;padding:0;background:none;
@@ -420,6 +424,13 @@ h2{
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition-duration:.01s!important;transition-delay:0s!important}
 }
+
+/* celular: fundo branco limpo atrás do convite */
+@media (max-width:560px){
+  html,body{background:#FFFFFF}
+  #convite,#convite.linen{background:#FFFFFF}
+  .folha.paper{background:#FFFFFF}
+}
 </style>
 </head>
 <body>
@@ -548,7 +559,7 @@ h2{
 
       <section aria-labelledby="t-local">
         <h2 id="t-local">Local</h2>
-        <figure class="foto-local"><img alt="Espaço da cerimônia, com corredor de madeira entre palmeiras" src="foto-local.jpg"></figure>
+        <figure class="foto-local"><img alt="Espaço da cerimônia, com corredor de madeira entre palmeiras" src="espaco-cerimonia.jpg"></figure>
         <p class="local-nome">Estrada Municipal Santo Antônio, 270</p>
         <p class="endereco" id="endereco">Jardim Sandra II<br>Mairiporã · SP · 07631-315</p>
         <div class="acoes">
